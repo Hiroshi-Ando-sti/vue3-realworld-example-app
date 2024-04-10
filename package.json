@@ -26,6 +26,7 @@
     "*": "eslint --fix"
   },
   "dependencies": {
+    "@pnpm/exe": "^8.15.6",
     "insane": "^2.6.2",
     "marked": "^12.0.0",
     "pinia": "^2.1.7",

@@ -28,6 +28,7 @@ export interface User {
   username: string;
   bio: string;
   image: string;
+  // e2etestexample: string;
 }
 
 export interface UpdateUser {
@@ -36,6 +37,7 @@ export interface UpdateUser {
   username?: string;
   bio?: string;
   image?: string;
+  // e2etestexample: string;
 }
 
 export interface Profile {
@@ -139,7 +141,8 @@ export enum ContentType {
 }
 
 export class HttpClient<SecurityDataType = unknown> {
-  public baseUrl: string = "https://api.realworld.io/api";
+  //TODO: public baseUrl: string = "https://api.realworld.io/api";
+  public baseUrl: string = "http://127.0.0.1:3001";
   private securityData: SecurityDataType | null = null;
   private securityWorker?: ApiConfig<SecurityDataType>["securityWorker"];
   private abortControllers = new Map<CancelToken, AbortController>();
